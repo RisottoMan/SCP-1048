@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{E0228D44-04DB-4F42-BA84-C46A2F09B3E1}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Scp1048</RootNamespace>
+        <AssemblyName>Scp1048</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Assembly-CSharp-Publicized.dll</HintPath>
+        </Reference>
+        <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\CommandSystem.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.API, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.API.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.CreditTags, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.CreditTags.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.CustomItems, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.CustomItems.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.CustomRoles, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.CustomRoles.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.Events, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.Events.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.Loader, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.Loader.dll</HintPath>
+        </Reference>
+        <Reference Include="Exiled.Permissions, Version=9.6.3.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\Exiled.Permissions.dll</HintPath>
+        </Reference>
+        <Reference Include="LabApi, Version=1.1.0.0, Culture=neutral, processorArchitecture=Amd64">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\LabApi.dll</HintPath>
+        </Reference>
+        <Reference Include="NorthwoodLib, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\NorthwoodLib.dll</HintPath>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="Assembly-CSharp-firstpass" HintPath="$(SL_REFERENCES)\Assembly-CSharp-firstpass.dll" />
+        <Reference Include="UnityEngine" HintPath="$(SL_REFERENCES)\UnityEngine.dll" />
+        <Reference Include="UnityEngine.AnimationModule" HintPath="$(SL_REFERENCES)\UnityEngine.AnimationModule.dll" />
+        <Reference Include="UnityEngine.CoreModule" HintPath="$(SL_REFERENCES)\UnityEngine.CoreModule.dll" />
+        <Reference Include="UnityEngine.PhysicsModule" HintPath="$(SL_REFERENCES)\UnityEngine.PhysicsModule.dll" />
+        <Reference Include="ProjectMER" HintPath="$(SL_REFERENCES)\ProjectMER.dll" />
+        <Reference Include="Mirror" HintPath="$(SL_REFERENCES)\Mirror.dll" />
+        <Reference Include="AudioPlayerApi" HintPath="$(SL_REFERENCES)\AudioPlayerApi.dll" />
+        <Reference Include="RoleAPI" HintPath="$(SL_REFERENCES)\RoleAPI.dll" />
+        <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+          <HintPath>packages\ExMod.Exiled.9.6.3\lib\net48\YamlDotNet.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Commands\MainCommand.cs" />
+        <Compile Include="Commands\Subcommands\GiveCommand.cs" />
+        <Compile Include="Commands\Subcommands\RemoveCommand.cs" />
+        <Compile Include="Configs\Config.cs" />
+        <Compile Include="EventHandler.cs" />
+        <Compile Include="Features\Abilities\BuildAbility.cs" />
+        <Compile Include="Features\Abilities\ShriekAbility.cs" />
+        <Compile Include="Features\Abilities\WaveAbility.cs" />
+        <Compile Include="Features\Scp1048Role.cs" />
+        <Compile Include="Plugin.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="App.config" />
+      <None Include="packages.config" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
