@@ -95,6 +95,7 @@
         <Compile Include="Features\Abilities\BuildAbility.cs" />
         <Compile Include="Features\Abilities\ShriekAbility.cs" />
         <Compile Include="Features\Abilities\WaveAbility.cs" />
+        <Compile Include="Features\Component\AnimationComponent.cs" />
         <Compile Include="Features\Scp1048Role.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>

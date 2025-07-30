@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Exiled.API.Enums;
+using Exiled.API.Features;
 using Exiled.API.Features.Spawn;
 using PlayerRoles;
 using RoleAPI.API;
@@ -117,4 +118,19 @@ public class Scp1048Role : ExtendedRole
     
     public override bool IsPlayerInvisible { get; set; } = true;
     public override bool IsShowPlayerNickname { get; set; } = true;
+
+    public override void AddRole(Player player)
+    {
+        base.AddRole(player);
+        player.GameObject.AddComponent<AnimationComponent>();
+    }
+
+    public override void RemoveRole(Player player)
+    {
+        base.RemoveRole(player);
+        if (player is null) return;
+        
+        var animationComponent = player.GameObject.GetComponent<AnimationComponent>();
+        UnityEngine.Object.Destroy(animationComponent);
+    }
 }
